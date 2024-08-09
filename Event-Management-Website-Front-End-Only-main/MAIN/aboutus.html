@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Management</title>
+    <link rel="stylesheet" href="css/aboutus.css">
+</head>
+<body>
+    <div class="background">
+        <header class="top-bar">
+            <div class="top-menu">
+                <ul>
+                    <li>
+                        <!-- Sidebar Toggle Button -->
+                        <button class="sidebar-toggle">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu">
+                                <line x1="3" y1="12" x2="21" y2="12"></line>
+                                <line x1="3" y1="6" x2="21" y2="6"></line>
+                                <line x1="3" y1="18" x2="21" y2="18"></line>
+                            </svg>
+                        </button>
+                    </li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        
+            <!-- Center Area with Picture (Logo) -->
+            <div class="center-area">
+                <a href="aboutus.html">
+                    <img src="Logoo.png" alt="Logo">
+                </a>
+            </div>
+        
+            <!-- Profile Section -->
+            <div class="profile">
+                <div class="profile-picture">
+                    <a href="profile.html">
+                        <img src="pp.jpeg" alt="Profile Picture">
+                    </a>
+                </div>
+                <div class="profile-card">
+                    <div class="profile-info">
+                        <a href="profile.html">
+                            <img src="pp.jpeg" alt="Profile Picture">
+                        </a>
+                        <h3>Ritu Nataraj Dommalur</h3>
+                        <p>Phone: +91 98453 32940</p>
+                        <p>Email: <a href="mailto:RNDfromISdept@gmail.com">RNDfromISdept@gmail.com</a></p>
+                    </div>
+                </div>
+            </div>
+        </header>  
+</header>
+
+
+
+<!-- About Us Section -->
+<div class="about-us">
+    <h1>ABOUT US</h1>
+</div>
+
+<div class="card-outer-container">
+    <div class="card-container">
+        <div class="card-content">
+            <p>Welcome to our event management website, launched in 2024 to revolutionize your event experiences. We pride ourselves on seamless ticket booking, effortless event browsing, and expert event organization services. Whether you're planning a conference, concert, or corporate retreat, we ensure every detail is meticulously handled for your peace of mind. Our user-friendly interface guarantees swift navigation and hassle-free ticket purchases, while our dedicated team stands ready to assist you at every step. Discover the future of event planning with us and transform your ideas into unforgettable occasions. Join us in shaping the next generation of event management today.</p>
+        </div>
+    </div>
+
+    <div class="slideshow-container">
+        <img src="AU1.jpg" class="slides">
+        <img src="AU2.jpg" class="slides">
+        <img src="AU3.jpg" class="slides">
+        <img src="AU4.jpg" class="slides">
+    </div>
+</div>
+
+
+
+<!-- Bottom Bar HTML with Images and Text (Swapped) -->
+<div class="bottom-bar">
+    <div class="additional-text">
+        © NC Innovations Private Limited
+    </div>
+    <ul>
+        <li><a href="#"><img src="LOG1.png" alt="Logo 1"></a></li>
+        <li><a href="#"><img src="LOG2.png" alt="Logo 2"></a></li>
+        <li><a href="#"><img src="LOG3.png" alt="Logo 3"></a></li>
+    </ul>
+</div>
+
+
+
+
+</main>
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <nav>
+                <a href="#event1"><i class="icon"></i><p>Event 1</p></a>
+                <a href="#event2"><i class="icon"></i><p>Event 2</p></a>
+                <a href="#event3"><i class="icon"></i><p>Event 3</p></a>
+                <a href="#event4"><i class="icon"></i><p>Event 4</p></a>
+                <a href="#event5"><i class="icon"></i><p>Event 5</p></a>
+                <a href="#event6"><i class="icon"></i><p>Event 6</p></a>
+                <a href="#event7"><i class="icon"></i><p>Event 7</p></a>
+            </nav>
+        </aside>
+
+    <script>
+        const sidebarToggle = document.querySelector('.sidebar-toggle');
+        const sidebar = document.querySelector('.sidebar');
+
+        sidebarToggle.addEventListener('mouseenter', () => {
+            sidebar.style.left = '0';
+        });
+
+        sidebar.addEventListener('mouseleave', () => {
+            sidebar.style.left = '-180px'; // Adjust based on the sidebar width
+        });
+      
+    </script>
+
+    <script>
+        var slideIndex = 0;
+        showSlides();
+    
+        function showSlides() {
+            var slides = document.getElementsByClassName("slides");
+            for (var i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1;
+            }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+    </script>
+    
+</body>
+</html>
+
+

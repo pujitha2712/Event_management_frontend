@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Management</title>
+    <link rel="stylesheet" href="css/event.css">
+</head>
+<body>
+    <div class="background">
+        <header class="top-bar">
+            <div class="top-menu">
+                <ul>
+                    <li>
+                        <!-- Sidebar Toggle Button -->
+                        <button class="sidebar-toggle">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu">
+                                <line x1="3" y1="12" x2="21" y2="12"></line>
+                                <line x1="3" y1="6" x2="21" y2="6"></line>
+                                <line x1="3" y1="18" x2="21" y2="18"></line>
+                            </svg>
+                        </button>
+                    </li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        
+            <!-- Center Area with Picture (Logo) -->
+            <div class="center-area">
+                
+                    <img src="Logoo.png" alt="Logo">
+                </a>
+            </div>
+        
+            <!-- Profile Section -->
+            <div class="profile">
+                <div class="profile-picture">
+                    <a href="profile.html">
+                        <img src="pp.jpeg" alt="Profile Picture">
+                    </a>
+                </div>
+                <div class="profile-card">
+                    <div class="profile-info">
+                        <a href="profile.html">
+                            <img src="pp.jpeg" alt="Profile Picture">
+                        </a>
+                        <h3>Ritu Nataraj Dommalur</h3>
+                        <p>Phone: +91 98453 32940</p>
+                        <p>Email: <a href="mailto:RNDfromISdept@gmail.com">RNDfromISdept@gmail.com</a></p>
+                    </div>
+                </div>
+            </div>
+        </header>  
+</header>
+
+<!-- Bottom Bar HTML with Images and Text (Swapped) -->
+<div class="bottom-bar">
+    <div class="additional-text">
+        © NC Innovations Private Limited
+    </div>
+    <ul>
+        <li><a href="#"><img src="LOG1.png" alt="Logo 1"></a></li>
+        <li><a href="#"><img src="LOG2.png" alt="Logo 2"></a></li>
+        <li><a href="#"><img src="LOG3.png" alt="Logo 3"></a></li>
+    </ul>
+</div>
+
+
+        <!-- Main Content -->
+        <main>
+            <div class="main-box">
+                <div class="title-bar">
+                    <h1>CONCERT</h1>
+                    <div class="text-box">
+                        <h4>&emsp;<b>Event Title:</b> Rock Night Extravaganza</h4>
+                    </div>
+                    <div class="text-box">
+                        <h4>&emsp;<b>Date:</b> July 20, 2024</h4>
+                    </div>
+                    <div class="text-box">
+                        <h4>&emsp;<b>Time:</b> 7:00 PM - 11:00 PM</h4>
+                    </div>
+                    <div class="text-box">
+                        <h4>&emsp;<b>Venue:</b> City Arena, Downtown</h4>
+                    </div>
+                    <div class="text-box">
+                        <h4>&emsp;<b>Description:</b><br>
+                            &emsp;Get ready for an electrifying night of live music as the Rock Night Extravaganza takes over City Arena! Featuring performances by top rock bands, mesmerizing light shows, and an energetic atmosphere, this concert is set to be an unforgettable experience for music lovers of all ages. Join us for a night of head-banging tunes, fantastic food and drink options, and an opportunity to connect with fellow rock enthusiasts. Don’t miss out on this ultimate rock music celebration!
+                        </h4>
+                    </div>
+                    <div class="button-container">
+                        <button class="button">Book Tickets</button>
+                        <button class="button">Contact</button>
+                    </div>
+                </div>
+                <div class="image-box">
+                    <img src="concert.jpeg" alt="Event Image">
+                </div>
+            </div>
+        </main>
+    </div>
+
+
+<!-- About Us Section -->
+<div class="about-us">
+    <h1>EVENT</h1>
+</div>
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <nav>
+                <a href="#event1"><i class="icon"></i><p>Event 1</p></a>
+                <a href="#event2"><i class="icon"></i><p>Event 2</p></a>
+                <a href="#event3"><i class="icon"></i><p>Event 3</p></a>
+                <a href="#event4"><i class="icon"></i><p>Event 4</p></a>
+                <a href="#event5"><i class="icon"></i><p>Event 5</p></a>
+                <a href="#event6"><i class="icon"></i><p>Event 6</p></a>
+                <a href="#event7"><i class="icon"></i><p>Event 7</p></a>
+            </nav>
+        </aside>
+
+    <script>
+        const sidebarToggle = document.querySelector('.sidebar-toggle');
+        const sidebar = document.querySelector('.sidebar');
+
+        sidebarToggle.addEventListener('mouseenter', () => {
+            sidebar.style.left = '0';
+        });
+
+        sidebar.addEventListener('mouseleave', () => {
+            sidebar.style.left = '-180px'; // Adjust based on the sidebar width
+        });
+      
+    </script>
+
+    <script>
+        var slideIndex = 0;
+        showSlides();
+    
+        function showSlides() {
+            var slides = document.getElementsByClassName("slides");
+            for (var i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1;
+            }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+    </script>
+    
+</body>
+</html>
+

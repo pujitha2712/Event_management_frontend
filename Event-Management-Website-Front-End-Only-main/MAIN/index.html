@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Management</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="background">
+        <header class="top-bar">
+            <div class="top-menu">
+                <ul>
+                    <li>
+                        <!-- Sidebar Toggle Button -->
+                        <button class="sidebar-toggle">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu">
+                                <line x1="3" y1="12" x2="21" y2="12"></line>
+                                <line x1="3" y1="6" x2="21" y2="6"></line>
+                                <line x1="3" y1="18" x2="21" y2="18"></line>
+                            </svg>
+                        </button>
+                    </li>
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="aboutus.html" class="nav-link">About</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        
+            <!-- Center Area with Picture (Logo) -->
+            <div class="center-area">
+                <img src="Logoo.png" alt="Logo">
+            </div>
+        
+            <!-- Profile Section -->
+            <div class="profile">
+                <div class="profile-picture">
+                    <a href="profile.html" class="nav-link">
+                        <img src="pp.jpeg" alt="Profile Picture">
+                    </a>
+                </div>
+                <div class="profile-card">
+                    <div class="profile-info">
+                        <a href="profile.html" class="nav-link">
+                            <img src="pp.jpeg" alt="Profile Picture">
+                        </a>
+                        <h3>Ritu Nataraj Dandinashire</h3>
+                        <p>Phone: +91 98453 32940</p>
+                        <p>Email: <a href="mailto:RNDfromISdept@gmail.com">RNDfromISdept@gmail.com</a></p>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Bottom Bar HTML with Images and Text (Swapped) -->
+        <div class="bottom-bar">
+            <div class="additional-text">
+                © NC Innovations Private Limited
+            </div>
+            <ul>
+                <li><a href="https://www.instagram.com" target="_blank"><img src="LOG1.png" alt="Logo 1"></a></li>
+                <li><a href="https://www.linkedin.com" target="_blank"><img src="LOG2.png" alt="Logo 2"></a></li>
+                <li><a href="https://mail.google.com" target="_blank"><img src="LOG3.png" alt="Logo 3"></a></li>
+            </ul>
+        </div>
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <nav>
+                <a href="#event1"><i class="icon"></i><p>Event 1</p></a>
+                <a href="#event2"><i class="icon"></i><p>Event 2</p></a>
+                <a href="#event3"><i class="icon"></i><p>Event 3</p></a>
+                <a href="#event4"><i class="icon"></i><p>Event 4</p></a>
+                <a href="#event5"><i class="icon"></i><p>Event 5</p></a>
+                <a href="#event6"><i class="icon"></i><p>Event 6</p></a>
+                <a href="#event7"><i class="icon"></i><p>Event 7</p></a>
+            </nav>
+        </aside>
+
+
+
+        <!-- Main Content -->
+        <main>
+            <section class="slideshow-container">
+                <div class="mySlides fade">
+                    <video autoplay muted loop controls>
+                        <source src="video1.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <button class="prev-button" onclick="plusSlides(-1)">&#10094;</button>
+                    <button class="next-button" onclick="plusSlides(1)">&#10095;</button>
+                </div>
+            
+                <div class="mySlides fade">
+                    <video autoplay muted loop controls>
+                        <source src="video2.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <button class="prev-button" onclick="plusSlides(-1)">&#10094;</button>
+                    <button class="next-button" onclick="plusSlides(1)">&#10095;</button>
+                </div>
+            
+                <div class="mySlides fade">
+                    <video autoplay muted loop controls>
+                        <source src="video3.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <button class="prev-button" onclick="plusSlides(-1)">&#10094;</button>
+                    <button class="next-button" onclick="plusSlides(1)">&#10095;</button>
+                </div>
+            
+            
+
+            <div class="search-bar-container">
+                <div class="search-bar">
+                    <select onchange="filterEvents(this.value)">
+                        <option value="" disabled selected>Choose</option>
+                        <option value="all">All Events</option>
+                        <option value="1">Event 1</option>
+                        <option value="2">Event 2</option>
+                        <option value="3">Event 3</option>
+                        <option value="4">Event 4</option>
+                        <option value="5">Event 5</option>
+                        <option value="6">Event 6</option>
+                    </select>
+                </div>
+                <div class="search-bar">
+                    <select onchange="filterEvents(this.value)">
+                        <option value="" disabled selected>Choose</option>
+                        <option value="all">All Events</option>
+                        <option value="1">Event 1</option>
+                        <option value="2">Event 2</option>
+                        <option value="3">Event 3</option>
+                        <option value="4">Event 4</option>
+                        <option value="5">Event 5</option>
+                        <option value="6">Event 6</option>
+                    </select>
+                </div>
+                <div class="search-bar">
+                    <select onchange="filterEvents(this.value)">
+                        <option value="" disabled selected>Choose</option>
+                        <option value="all">All Events</option>
+                        <option value="1">Event 1</option>
+                        <option value="2">Event 2</option>
+                        <option value="3">Event 3</option>
+                        <option value="4">Event 4</option>
+                        <option value="5">Event 5</option>
+                        <option value="6">Event 6</option>
+                    </select>
+                </div>
+            </div>
+<!-- Buttons added here -->
+<div class="button-container">
+    <button class="custom-button">SEARCH</button>
+    <button class="custom-button">ADD EVENT</button>
+</div>
+
+
+<!-- Card Container -->
+<div class="card-outer-container">
+    <section class="card-container">
+        <div class="card" data-event="1">
+            <a href="event.html" class="card-link">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <h2>Event 1</h2>
+                        <p>Details about Event 1.</p>
+                    </div>
+                    <div class="card-back">
+                        <h2>More Info</h2>
+                        <p>Additional details about Event 1.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="card" data-event="2">
+            <a href="event.html" class="card-link">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <h2>Event 2</h2>
+                        <p>Details about Event 2.</p>
+                    </div>
+                    <div class="card-back">
+                        <h2>More Info</h2>
+                        <p>Additional details about Event 2.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="card" data-event="3">
+            <a href="event.html" class="card-link">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <h2>Event 3</h2>
+                        <p>Details about Event 3.</p>
+                    </div>
+                    <div class="card-back">
+                        <h2>More Info</h2>
+                        <p>Additional details about Event 3.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="card" data-event="4">
+            <a href="event.html" class="card-link">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <h2>Event 4</h2>
+                        <p>Details about Event 4.</p>
+                    </div>
+                    <div class="card-back">
+                        <h2>More Info</h2>
+                        <p>Additional details about Event 4.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="card" data-event="5">
+            <a href="event.html" class="card-link">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <h2>Event 5</h2>
+                        <p>Details about Event 5.</p>
+                    </div>
+                    <div class="card-back">
+                        <h2>More Info</h2>
+                        <p>Additional details about Event 5.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="card" data-event="6">
+            <a href="event.html" class="card-link">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <h2>Event 6</h2>
+                        <p>Details about Event 6.</p>
+                    </div>
+                    <div class="card-back">
+                        <h2>More Info</h2>
+                        <p>Additional details about Event 6.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="card" data-event="7">
+            <a href="event.html" class="card-link">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <h2>Event 7</h2>
+                        <p>Details about Event 7.</p>
+                    </div>
+                    <div class="card-back">
+                        <h2>More Info</h2>
+                        <p>Additional details about Event 7.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="card" data-event="8">
+            <a href="event.html" class="card-link">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <h2>Event 8</h2>
+                        <p>Details about Event 8.</p>
+                    </div>
+                    <div class="card-back">
+                        <h2>More Info</h2>
+                        <p>Additional details about Event 8.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+</div>
+ 
+
+    <div class="transition-overlay"></div>
+
+    <script>
+        const sidebarToggle = document.querySelector('.sidebar-toggle');
+        const sidebar = document.querySelector('.sidebar');
+
+        sidebarToggle.addEventListener('mouseenter', () => {
+            sidebar.style.left = '0';
+        });
+
+        sidebar.addEventListener('mouseleave', () => {
+            sidebar.style.left = '-180px'; // Adjust based on the sidebar width
+        });
+
+        const cards = document.querySelectorAll('.card');
+
+        function filterEvents(eventNumber) {
+            cards.forEach(card => {
+                const dataEvent = card.getAttribute('data-event');
+                if (eventNumber === 'all' || eventNumber === dataEvent) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        cards.forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                card.querySelector('.card-inner').style.transform = 'rotateY(180deg)';
+            });
+
+            card.addEventListener('mouseleave', () => {
+                card.querySelector('.card-inner').style.transform = 'rotateY(0)';
+            });
+        });
+
+        // Smooth Page Transition Script
+        const transitionOverlay = document.querySelector('.transition-overlay');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        function smoothTransition(href) {
+            transitionOverlay.style.opacity = '1';
+            setTimeout(() => {
+                window.location.href = href;
+            }, 500); // Adjust delay as needed
+        }
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', function(event) {
+                event.preventDefault();
+                const href = this.getAttribute('href');
+                smoothTransition(href);
+            });
+        });
+
+        window.addEventListener('load', () => {
+            transitionOverlay.style.opacity = '0';
+        });
+
+// Slideshow Script
+var slideIndex = 0;
+var videos = document.querySelectorAll(".mySlides video");
+
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+
+    // Hide all slides
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+
+    // Pause all videos
+    videos.forEach(video => {
+        video.pause();
+    });
+
+    // Increment slide index
+    slideIndex++;
+
+    // Reset slide index if exceeds number of slides
+    if (slideIndex > slides.length) {
+        slideIndex = 1;
+    }
+
+    // Display the current slide
+    slides[slideIndex - 1].style.display = "block";
+
+    // Play the video (if any)
+    if (videos.length > 0 && slideIndex <= videos.length) {
+        videos[slideIndex - 1].play();
+        videos[slideIndex - 1].addEventListener('ended', function () {
+            setTimeout(function () {
+                showSlides();
+            }, 2000); // Change slide every 2 seconds after video ends
+        });
+    } else {
+        // If no videos, just change slide every 2 seconds
+        setTimeout(function () {
+            showSlides();
+        }, 2000);
+    }
+}
+
+// Function to go to next or previous slide
+function plusSlides(n) {
+    slideIndex += n;
+    if (slideIndex > videos.length) {
+        slideIndex = 1;
+    } else if (slideIndex < 1) {
+        slideIndex = videos.length;
+    }
+    showSlides();
+}
+
+
+
+    </script>
+</body>
+</html>

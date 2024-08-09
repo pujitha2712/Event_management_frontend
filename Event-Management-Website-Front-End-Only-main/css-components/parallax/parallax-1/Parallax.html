@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parallax</title>
+  <link rel="stylesheet" href="Parallax.css">
+</head>
+<body>
+  <main>
+    <section class="no-parallax">
+      <div>
+        <h2>About</h2>
+        <p>
+          Welcome to our dynamic event platform! Whether you're attending or organizing, find and host the perfect gatherings effortlessly. 
+          Explore diverse events or plan your own with ease. Let's create memorable experiences together. Join us and make every event special!
+        </p>
+        <P>
+          ‎
+        </P>
+        <!-- Updated button with new HTML -->
+        <div class="button" onclick="openLogin()">
+          <div class="box">L</div>
+          <div class="box">O</div>
+          <div class="box">G</div>
+          <div class="box">I</div>
+          <div class="box">N</div>
+        </div>
+      </div>
+      <img src="1.svg" />
+    </section>
+    <section class="parallax bg"></section>
+    <section class="no-parallax">
+      <div>
+        <h2>Search For Events</h2>
+        <p>
+          Discover events effortlessly with our intuitive search feature. Explore a wide range of gatherings tailored to your interests and preferences. 
+          From concerts to workshops, find the perfect event for every occasion. Simplify your event planning or find your next adventure with just a few clicks.
+        </p>
+      </div>
+      <img src="2.svg" />
+    </section>
+    <section class="parallax bg"></section>
+    <section class="no-parallax">
+      <div>
+        <h2>Projects</h2>
+        <footer>
+          <div class="footer-inner">
+            <ul>
+              <li>Calculator</li>
+              <li>Dashboard</li>
+              <li>Website</li>
+              <li>Gallery</li>
+            </ul>
+            <ul>
+              <li>Todo List</li>
+              <li>Animations</li>
+              <li>Neumorphism</li>
+              <li>Carousels</li>
+            </ul>
+          </div>
+        </footer>
+      </div>
+      <img src="3.svg" />
+    </section>
+  </main>
+
+  <div class="modal-background" onclick="toggleModal()"></div>
+  <div class="modal">
+    <h2>Modal Window</h2>
+    <p>
+      You have opened the modal, they are great for confirming actions or
+      displaying critical information.
+    </p>
+  </div>
+
+  <script>
+    const openLogin = () => {
+      document.body.classList.add('transition-out'); // Apply transition class
+      setTimeout(() => {
+        window.location.href = 'signup.html'; // Navigate to signup.html after a short delay
+      }, 500); // Adjust delay time as needed
+    };
+
+    const toggleModal = () => {
+      const bodyClassList = document.body.classList;
+      if (bodyClassList.contains("open")) {
+        bodyClassList.remove("open");
+        bodyClassList.add("closed");
+      } else {
+        bodyClassList.remove("closed");
+        bodyClassList.add("open");
+      }
+    };
+  </script>
+</body>
+</html>

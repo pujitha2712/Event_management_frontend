@@ -1,0 +1,415 @@
+/* Global Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+    background: #f0f0ff;
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+.background {
+    background: url('../backgrounds/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header and Top Menu Styles */
+header {
+    background: rgba(0, 26, 255, 0.7);
+    color: white;
+    height: 130px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100; /* Ensure header is above cards */
+    backdrop-filter: blur(10px);
+    padding: 0 20px;
+    padding-left: 64px;
+}
+
+/* Top Menu Styles */
+.top-menu ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+.top-menu li {
+    margin: 0px;
+}
+
+.top-menu a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 20px;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.top-menu a:hover {
+    color: #ffc107;
+}
+
+/* Top Menu Dropdown Styles */
+.top-menu li {
+    position: relative;
+}
+
+.top-menu li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: rgb(166, 255, 0);
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.top-menu li:hover ul {
+    display: block;
+}
+
+.top-menu li ul li {
+    margin: 0;
+}
+
+.top-menu li ul li a {
+    padding: 10px 20px;
+    color: #fff;
+    display: block;
+    font-size: 20px;
+}
+
+.top-menu li ul li a:hover {
+    background-color: #ffc107;
+    color: #3700ff;
+    box-shadow: 0 0 15px rgba(0, 0, 255, 0.3);
+}
+
+.center-area img {
+    display: block; /* Ensures the image behaves like a block element */
+    max-width: 60%; /* Ensures the image does not exceed its container width */
+    height: auto; /* Ensures the image scales proportionally */
+    margin: 0 auto; /* Centers the image horizontally */
+    margin-left: -30px; /* Adjusts the left margin to move the image slightly left */
+}
+
+/* Sidebar Toggle Button */
+.sidebar-toggle {
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px 15px;
+}
+
+/* Profile Styles */
+.profile {
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.profile img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-left: 5px;
+}
+
+.profile-card {
+    display: none;
+    position: absolute;
+    top: calc(100% + 10px);
+    right: 0;
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    backdrop-filter: blur(10px); /* Apply a blur effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    padding: 30px; /* Increased padding */
+    border-radius: 15px; /* Increased border radius */
+    width: 300px; /* Increased width */
+    text-align: center;
+    z-index: 100;
+}
+
+.profile:hover .profile-card {
+    display: block;
+}
+
+.profile-card img {
+    border-radius: 10%;
+    width: 220px; /* Larger profile picture size */
+    height: 220px; /* Larger profile picture size */
+    margin-bottom: 20px; /* Increased space between image and name */
+}
+
+.profile-card h3 {
+    margin: 0;
+    font-size: 18px; /* Adjusted font size */
+    color: #0026ff; /* Adjusted font color */
+}
+
+.profile-card p {
+    margin: 5px 0;
+    font-size: 14px; /* Adjusted font size for phone number and email */
+    color: #555; /* Adjusted font color for phone number and email */
+}
+
+/* Sidebar Styles */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -180px;
+    bottom: 0;
+    width: 180px;
+    background: rgba(55, 0, 255, 0.7);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 20px 8px;
+    transition: left 0.4s;
+    z-index: 1001;
+    backdrop-filter: blur(10px);
+}
+
+.sidebar nav {
+    flex-grow: 1;
+}
+
+.sidebar a {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    height: 44px;
+    padding: 0 16px;
+    color: rgba(255, 255, 255, 0.95);
+    text-decoration: none;
+    opacity: 0.8;
+    transition: background 0.175s, opacity 0.175s;
+}
+
+.sidebar a:hover {
+    background: rgba(255, 255, 255, 0.1);
+    opacity: 1;
+}
+
+.sidebar a p {
+    margin: 0;
+    opacity: 0;
+    transition: opacity 0.175s;
+    white-space: nowrap;
+}
+
+.sidebar:hover a p {
+    opacity: 1;
+}
+
+/* Sidebar Toggle Button */
+.sidebar-toggle {
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar-toggle svg {
+    width: 24px;
+    height: 24px;
+    fill: white;
+    transition: transform 0.3s;
+}
+
+.sidebar-toggle.active svg {
+    transform: rotate(90deg);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .logo {
+        max-height: 60px;
+    }
+
+    .top-menu a {
+        font-size: 19px;
+        padding: 10px 15px;
+    }
+
+    .search-bar {
+        max-width: 200px;
+    }
+}
+
+/* About Us Section Styles */
+.about-us {
+    text-align: center;
+    padding: 30px 0;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 150px;
+}
+
+.about-us h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    color: #f0f0ff;
+}
+
+/* Bottom Bar Styles */
+.bottom-bar {
+    background: rgba(0, 26, 255, 0.7); /* Same background color as the header */
+    color: white;
+    height: 50px; /* Same height as the header */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    z-index: 1;
+    backdrop-filter: blur(10px);
+    padding: 0 20px;
+    padding-left: 64px; /* Adjust padding if needed */
+}
+
+.bottom-bar ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+.bottom-bar a {
+    text-decoration: none;
+    position: relative;
+    transition: opacity 0.3s ease; /* Smooth opacity transition */
+}
+
+.bottom-bar a img {
+    width: 30px; /* Adjust width of the images */
+    height: auto; /* Ensures images maintain aspect ratio */
+    transition: transform 0.3s ease; /* Smooth transform transition */
+}
+
+.bottom-bar a:hover img {
+    transform: scale(1.1); /* Scale up the image on hover */
+    opacity: 0.8; /* Reduce opacity on hover for visual feedback */
+}
+
+.additional-text {
+    font-size: 16px;
+    white-space: nowrap; /* Prevent text from wrapping */
+}
+
+/* Outer Container Styles with Glass Effect */
+.outer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Semi-transparent border */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    backdrop-filter: blur(10px); /* Blur effect for glass look */
+    -webkit-backdrop-filter: blur(10px); /* Safari support */
+    margin: 20px; /* Margin around the container */
+    
+    /* Adjust width to reduce space on left and right */
+    width: 60%; /* Reduce width to 60% of the parent/container width */
+    max-width: 800px; /* Optional: set a maximum width */
+    
+    margin: auto; /* Center the container horizontally */
+}
+
+/* Profile Container Styles */
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-bottom: 70px; /* Ensure there's space for the bottom bar */
+}
+
+.profile-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Profile Image Styles */
+.profile-image {
+    position: relative;
+    width: 250px;
+    height: 320px;
+    border-radius: 00%;
+    overflow: hidden;
+    margin-bottom: 20px;
+    border: 5px solid white; /* Changed border color to white */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Box shadow remains unchanged */
+    transition: transform 0.3s ease-in-out; /* Added transition for smooth scaling */
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-image:hover {
+    transform: scale(1.1); /* Enlarge the image slightly on hover */
+}
+
+/* Profile Description Styles */
+.profile-description {
+    background-color: rgba(255, 255, 255, 0.8); /* White background color with transparency */
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Shadow effect for the container */
+    text-align: center; /* Align text to the center */
+    max-width: 400px; /* Adjust the maximum width as needed */
+    margin: 0 auto; /* Center align horizontally */
+}
+
+.profile-description p {
+    text-align: left; /* Align text inside the description box to the left */
+}
+
+.profile-details {
+    text-align: center;
+    max-width: 400px; /* Match the width of the description box */
+}
+
+/* Main content padding to account for bottom bar */
+main {
+    padding-bottom: 70px; /* Space for the bottom bar */
+}

@@ -1,0 +1,242 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+#fullHD {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, #1e1f43, #484d72);
+    z-index: -1;
+}
+
+#group1 {
+    position: absolute;
+    left: 50px;
+    top: 30px;
+    display: flex;
+    align-items: center;
+}
+
+#myspace {
+    width: 60px;
+    height: 60px;
+    background: #ffffff;
+    border-radius: 50%;
+}
+
+#shape {
+    width: 100%;
+    height: 100%;
+}
+
+#cOFFEESTUF {
+    margin-left: 20px;
+    color: #ffffff;
+    font-family: "Alfa Slab One";
+    font-size: 36px;
+}
+
+#hOME, #pRODUCTS, #sIGNIN {
+    position: absolute;
+    top: 50px;
+    color: #ffffff;
+    font-family: "Alfa Slab One";
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#hOME {
+    left: 850px;
+}
+
+#pRODUCTS {
+    left: 1000px;
+}
+
+#sIGNIN {
+    left: 1200px;
+}
+
+#wELOUCAFEE {
+    position: absolute;
+    left: 100px;
+    top: 200px;
+    color: #ffffff;
+    font-family: "Alfa Slab One";
+    font-size: 30px;
+}
+
+#caffeineis {
+    position: absolute;
+    left: 100px;
+    top: 250px;
+    width: 400px;
+    color: #ffffff;
+    font-family: Adamina, serif;
+    font-size: 16px;
+}
+
+#group2 {
+    position: absolute;
+    left: 100px;
+    top: 400px;
+}
+
+.rectangle-button {
+    width: 200px;
+    height: 50px;
+    background: #757575;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#vISITOURST {
+    color: #ffffff;
+    font-family: "Alfa Slab One";
+    font-size: 18px;
+}
+
+.whyCafe {
+    position: absolute;
+    width: 300px;
+    color: #ffffff;
+    font-family: "Alfa Slab One";
+    font-size: 18px;
+    top: 600px;
+}
+
+#whyCafe1 {
+    left: 100px;
+}
+
+#whyCafe2 {
+    left: 500px;
+}
+
+#whyCafe3 {
+    left: 900px;
+}
+
+#whyCafe4 {
+    left: 1300px;
+}
+
+.considered {
+    font-family: Adamina, serif;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+#db6bedb8b6 {
+    position: absolute;
+    left: 1000px;
+    top: 300px;
+    width: 200px;
+    height: 200px;
+    background: url('path/to/your/image.png') no-repeat center center;
+    background-size: contain;
+}
+
+#cOFFEEINDU {
+    position: absolute;
+    left: 100px;
+    top: 1000px;
+    color: #ffffff;
+    font-family: "Alfa Slab One";
+    font-size: 30px;
+}
+
+#coffeeisco {
+    position: absolute;
+    left: 100px;
+    top: 1050px;
+    width: 400px;
+    color: #ffffff;
+    font-family: Adamina, serif;
+    font-size: 16px;
+}
+
+#group3 {
+    position: absolute;
+    left: 100px;
+    top: 1200px;
+}
+
+#cUSTOMERSS {
+    position: absolute;
+    left: 100px;
+    top: 1400px;
+    color: #ffffff;
+    font-family: "Alfa Slab One";
+    font-size: 30px;
+}
+
+#byusingCIt {
+    position: absolute;
+    left: 100px;
+    top: 1450px;
+    width: 400px;
+    color: #ffffff;
+    font-family: Adamina, serif;
+    font-size: 16px;
+}
+
+#rectangle {
+    position: absolute;
+    left: 600px;
+    top: 1500px;
+    width: 200px;
+    height: 200px;
+    background: #ffffff;
+    border-radius: 100px;
+}
+
+#issgoodstu {
+    position: absolute;
+    left: 600px;
+    top: 1550px;
+    width: 200px;
+    color: #1e1f43;
+    font-family: Adamina, serif;
+    font-size: 16px;
+    text-align: center;
+}
+
+#noidea {
+    position: absolute;
+    left: 600px;
+    top: 1500px;
+    width: 200px;
+    color: #1e1f43;
+    font-family: "Alfa Slab One";
+    font-size: 24px;
+    text-align: center;
+}
+
+#arrow {
+    position: absolute;
+    left: 700px;
+    top: 1700px;
+    width: 50px;
+    height: 50px;
+    background: url('path/to/your/arrow.png') no-repeat center center;
+    background-size: contain;
+}
+
+#text {
+    position: absolute;
+    left: 100px;
+    top: 1800px;
+    width: 300px;
+    color: #ffffff;
+    font-family: Adamina, serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
